@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Labb1 - Grupp 43</title>
+    <style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 20px;
+        background-color: #f9f9f9;
+        color: #333;
+    }
+
+    h1 {
+        color: #0056b3;
+        text-align: center;
+    }
+
+    label {
+        display: block;
+        margin: 10px 0 5px;
+        font-weight: bold;
+    }
+
+    input[type="text"] {
+        width: 100%;
+        max-width: 400px;
+        padding: 10px;
+        margin-bottom: 15px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+    }
+
+    input[type="checkbox"] {
+        margin-right: 5px;
+    }
+
+    button {
+        padding: 10px 20px;
+        background-color: #0056b3;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 16px;
+    }
+
+    button:hover {
+        background-color: #003d80;
+    }
+
+    #dynamicDiv {
+        margin-top: 20px;
+        padding: 20px;
+        border: 2px dashed #ccc;
+        background-color: white;
+        text-align: center;
+        font-style: italic;
+        color: #555;
+    }
+    </style>
+</head>
+<body>
+    <h1>Labb1 - Grupp 43</h1>
+
+    <!-- Input-element 1 -->
+    <label for="color">Färg:</label>
+    <input type="text" id="color" name="color" class="textfield">
+
+    <!-- Input-element 2 -->
+    <label for="content">Innehåll:</label>
+    <input type="text" id="content" name="content" class="textfield">
+
+    <!-- Input-element 3 -->
+    <label>
+        <input type="checkbox" id="divStyle" name="divStyle" class="checkbox">
+        Ändra bakgrundsfärg
+    </label>
+
+    <!-- Button-element -->
+    <button id="removeDivButton">Ta bort</button>
+
+    <!-- Div-element -->
+    <div id="dynamicDiv"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
